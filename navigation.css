@@ -1,0 +1,28 @@
+/* -------- Navigation bar CSS --------------*/
+
+.nav-brand {
+    margin-left: 1cm;
+    margin-right: 1cm;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+      color: white;
+  }
+  .navbar-modification {
+    background-color: black;
+  }
+  .nav-btn:hover {
+    background-color: #A9A9A9;
+  }
+  .nav-btn {
+      background-color: black;
+      color: white;
+      padding: 18px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+  }
+  .home-info a:link, .home-info a:visited{
+    color:  white;
+    text-decoration: none;
+  }
