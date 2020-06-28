@@ -1,0 +1,43 @@
+
+  /*----------------------*/
+  .search-form-control {
+      width: 600px;
+      
+  }
+  
+  #input-control {
+      width: 70%;
+      height: 80%;
+  }
+  .home {
+      margin: 10px;
+      color: white;
+  }
+  .home:hover {
+      background-color: black;
+  }
+  .infomation {
+      margin: 10px;
+  }
+  .infomation:hover {
+    background-color:black ;
+  }
+  
+  .checkout {
+      float: right;
+  }
+  
+  .greeting {
+    text-align: center;
+    position: fixed;
+  top: 45%;
+  left: 40%;
+  }
+  .order-btn {
+      width: 50%;
+      height: 1.5cm;
+  }
+  a:link, a:visited{
+    color:  white;
+    text-decoration: none;
+  }
