@@ -1,0 +1,77 @@
+/* ---------- Sign up ------------ */
+
+  .nav-brand {
+    margin-left: 1cm;
+    margin-right: 1cm;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+      color: white;
+  }
+  .navbar-modification {
+    background-color: black;
+  }
+  .nav-btn:hover {
+    background-color: #A9A9A9;
+  }
+  .nav-btn {
+      background-color: black;
+      color: white;
+      padding: 18px;
+        font-size: 16px;
+      border: none;
+      cursor: pointer;
+  }
+  a:link, a:visited{
+    color: currentColor
+  }
+  
+.login-form {
+    left: 25%;
+}
+#wrap{
+    background-image: -ms-linear-gradient(top, #FFFFFF 0%, #D3D8E8 100%);
+    /* Mozilla Firefox */ 
+    background-image: -moz-linear-gradient(top, #FFFFFF 0%, #D3D8E8 100%);
+    /* Opera */ 
+    background-image: -o-linear-gradient(top, #FFFFFF 0%, #D3D8E8 100%);
+    /* Webkit (Safari/Chrome 10) */ 
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FFFFFF), color-stop(1, #D3D8E8));
+    /* Webkit (Chrome 11+) */ 
+    background-image: -webkit-linear-gradient(top, #FFFFFF 0%, #D3D8E8 100%);
+    /* W3C Markup, IE10 Release Preview */ 
+    background-image: linear-gradient(to bottom, #FFFFFF 0%, #D3D8E8 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    padding-bottom: 10px;
+    }
+  
+    legend{
+        color:#141823;
+        font-size:25px;
+        font-weight:bold;
+    }
+    .signup-btn {
+      float: right;
+    }
+    .navbar-default .navbar-brand{
+            color:#fff;
+            font-size:30px;
+            font-weight:bold;
+        }
+    .form .form-control { margin-bottom: 10px; }
+    @media (min-width:768px) {
+        #home{
+            margin-top:50px;
+        }
+        #home .slogan{
+            color: #0e385f;
+            line-height: 29px;
+            font-weight:bold;
+        }
+    }
+    a:link, a:visited{
+      color:  white;
+      text-decoration: none;
+    }
