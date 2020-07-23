@@ -1,11 +1,11 @@
 // products data
 const products = [
-    { id: 1, name: "Banh Mi", price: 10, img: "https://images.foody.vn/res/g13/129725/prof/s640x400/foody-mobile-foody-quan-co-3-hau--960-635652896252263911.jpg" },
-    { id: 2, name: "Banh Mi", price: 12, img: "https://images.foody.vn/res/g13/129725/prof/s640x400/foody-mobile-foody-quan-co-3-hau--960-635652896252263911.jpg" },
-    { id: 3, name: "Banh Mi", price: 15, img: "https://images.foody.vn/res/g13/129725/prof/s640x400/foody-mobile-foody-quan-co-3-hau--960-635652896252263911.jpg" },
-    { id: 4, name: "Banh Mi", price: 17, img: "https://images.foody.vn/res/g13/129725/prof/s640x400/foody-mobile-foody-quan-co-3-hau--960-635652896252263911.jpg" },
-    { id: 5, name: "Banh Mi", price: 17, img: "https://images.foody.vn/res/g13/129725/prof/s640x400/foody-mobile-foody-quan-co-3-hau--960-635652896252263911.jpg" },
-    { id: 6, name: "Banh Mi", price: 11, img: "https://images.foody.vn/res/g13/129725/prof/s640x400/foody-mobile-foody-quan-co-3-hau--960-635652896252263911.jpg" },
+    { id: 1, name: "Banh Mi 1", price: 10, img: "https://images.foody.vn/res/g13/129725/prof/s640x400/foody-mobile-foody-quan-co-3-hau--960-635652896252263911.jpg" },
+    { id: 2, name: "Banh Mi 2", price: 12, img: "https://images.foody.vn/res/g2/13831/prof/s640x400/foody-upload-api-foody-mobile-bmi-huynh-hoa-190924151516.jpg" },
+    { id: 3, name: "Banh Mi 3", price: 15, img: "https://images.foody.vn/res/g13/129725/prof/s640x400/foody-mobile-foody-quan-co-3-hau--960-635652896252263911.jpg" },
+    { id: 4, name: "Banh Mi 4", price: 17, img: "https://images.foody.vn/res/g2/13831/prof/s640x400/foody-upload-api-foody-mobile-bmi-huynh-hoa-190924151516.jpg" },
+    { id: 5, name: "Banh Mi 5", price: 17, img: "https://images.foody.vn/res/g13/129725/prof/s640x400/foody-mobile-foody-quan-co-3-hau--960-635652896252263911.jpg" },
+    { id: 6, name: "Banh Mi 6", price: 11, img: "https://images.foody.vn/res/g2/13831/prof/s640x400/foody-upload-api-foody-mobile-bmi-huynh-hoa-190924151516.jpg" },
 ]
 
 // render the product to the console
@@ -18,6 +18,7 @@ function renderProducts() {
 <h3>${product.name}</h3>
 <h6>Giá: ${product.price}K</h6>
 <button onclick="handleClickEdit(${product.id});" type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">Chỉnh sửa thông tin</button>
+<span><button type="button" class="btn btn-secondary" onclick='handleRemove(${product.id})'>Xóa món</button></span>
 </div>`
     }
     document.querySelector('.food-list').innerHTML = content;
@@ -34,6 +35,11 @@ function handleClickEdit(id) {
     }
 }
 
+function handleRemove(id) {
+    let index = products.findIndex(item => item.id == id);
+    products.splice(index, 1);
+    renderProducts();
+}
 // save the updated infomation of product
 function saveItem() {
     let id = document.getElementById('id').value;
